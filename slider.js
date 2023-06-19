@@ -11,7 +11,7 @@ function proximaImagen (){
 
     var sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
     slider.style.marginLeft="-200%";
-    slider.style.transition="all .5s";
+    slider.style.transition="all .6s";
 
     setTimeout(()=>{
         slider.style.transition="none";
@@ -27,7 +27,7 @@ function imagenAnterior (){
     var sliderSection = document.querySelectorAll(".slider__section");
     var sliderSectionLast= sliderSection[sliderSection.length-1];
     slider.style.marginLeft="0%";
-    slider.style.transition="all .5s";
+    slider.style.transition="all .6s";
 
     setTimeout(()=>{
         slider.style.transition="none";
@@ -45,3 +45,5 @@ btnRight.addEventListener("click", ()=>{
 btnLeft.addEventListener("click", ()=>{
     imagenAnterior();
 })
+
+setInterval(proximaImagen, 9000);
